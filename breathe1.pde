@@ -11,9 +11,9 @@ class Breather {
     // Initialize variables randomly
     x = width/2;
     y = height/2;  
-    rad =random(270,0);
+    rad =random(278.5,0);
     theta = 0;  
-    dtheta = 0.015;
+    dtheta = 0.010;
   }   
 
   // Increment theta
@@ -27,9 +27,10 @@ class Breather {
     // Display circle
     
     noStroke();
-    fill(35, 60, 103);
+    fill(108, 147, 251);//outer layer
     ellipse(x, y, 835, 835);
-    fill(68, 112, 173);
+    tint(255, 127);
+    fill(165, 190, 255);//inner layer
     ellipse(x, y, r, r);
     
   }
